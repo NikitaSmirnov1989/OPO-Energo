@@ -1,0 +1,31 @@
+.popup{
+    width: 200px;
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    margin-left: -100px;
+    z-index: 100;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.2s;
+}
+.pop_wrapper{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup_img{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.popup_img > img{
+    width: 100%;
+    height: 100%;
+}
+.popup_text{
+    color: white;
+    margin-left: 10px;
+}

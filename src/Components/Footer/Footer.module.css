@@ -1,0 +1,108 @@
+.footer{
+    margin: 0px auto;
+    padding: 30px 0px;
+}
+
+.footer_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_info{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_info_item{
+    text-align: center;
+    flex-grow: 1;
+}
+.footer_info_item{
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.footer_info_item:last-child{
+    border-right: 0px solid transparent;
+}
+.footer_item_img{
+    width: 24px;
+    height: 24px;
+}
+.footer_logo_img{
+    width: 24px;
+    height: 24px;
+}
+.footer_logo_img > img{
+    width: inherit;
+    height: inherit;
+}
+@media only screen and (min-width: 1280px){
+    .footer{
+        max-width: 1280px;
+    }
+}
+@media only screen  and (min-width: 1000px) and (max-width: 1279px){
+    .footer{
+        max-width: 1000px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 999px){
+    .footer{
+        max-width: 768px;
+    }
+    .footer_wrapper{
+        flex-direction: column;
+        height: 100%;
+    }
+    .footer_wrapper > div:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .footer_info{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .footer{
+        max-width: 480px;
+    }
+    .footer_wrapper{
+        flex-direction: column;
+    }
+    .footer_wrapper > div:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .footer_info{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .footer_info_item{
+        flex-grow: 1;
+        margin-bottom: 5px;
+    }
+    .footer_info_item:nth-last-child(2){
+        border-right: 0px solid transparent;
+    }    
+}
+@media only screen and (max-width: 479px){
+    .footer{
+        width: 320px;
+    }
+    .footer_wrapper{
+        flex-direction: column;
+    }
+    .footer_wrapper > div:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .footer_info{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .footer_info_item{
+        margin-bottom: 10px;
+        width: 45%;
+    }
+    .footer_info_item:not(:nth-child(2n+1)){
+        border-right: 0px solid transparent;
+    }
+
+}
+

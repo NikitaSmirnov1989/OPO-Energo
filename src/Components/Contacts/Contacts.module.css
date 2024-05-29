@@ -1,0 +1,72 @@
+.contacts_wrapper{
+    width: 100%;
+    height: 100%;
+}
+.contacts_title{
+    
+}
+.contacts_list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.contacts_item{
+    width: 45%;
+    border: 1px solid #E1E1E1;
+    border-radius: 15px;
+    padding: 20px 30px;
+    margin: 0px auto 30px auto;
+}
+.contacts_item_title{
+
+}
+.contacts_item > div{
+    margin-top: 10px;
+}
+.contacts_item_phone, .contacts_item_worktime, .contacts_item_email, .contacts_item_whatsapp, .contacts_item_telegram{
+    display: flex;
+}
+.contacts_all_img{
+    margin-right: 5px;
+    margin-top: 3px;
+}
+.contacts_item_worktime_time_list{
+    margin-left: 40px;
+}
+.contacts_item_worktime_time_list > :first-child{
+    transform: translateX(-40px);
+}
+.contacts_item_whatsapp_img{
+    
+}
+@media only screen and (min-width: 1280px){
+    
+}
+@media only screen and (min-width: 1000px) and (max-width: 1279px){
+    
+}
+@media only screen and (min-width: 768px) and (max-width: 999px){
+    
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .contacts_item{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 479px){
+    .contacts_list{
+        flex-direction: column;
+    }
+    .contacts_item{
+        width: 100%;
+        margin-bottom: 50px;
+        padding: 20px 10px;
+    }
+    .contacts_title{
+        font-size: 1.5rem;
+    }
+
+}
